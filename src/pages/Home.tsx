@@ -6,11 +6,11 @@ const Home: React.FC = () => (
   <section className="flex flex-col items-center justify-center w-full h-full min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-blue-950 px-4">
     <div className="max-w-2xl text-center">
       <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-        Rayyan Khan
+        Rayyan A. Khan
       </h1>
       <span className="text-lg md:text-2xl text-blue-400 mb-8 font-medium block min-h-[2.5rem]">
         <Typewriter
-          words={['Computer Science Student', 'Startup Founder', 'Full-Stack/Machine Learning Developer']}
+          words={['Computer Science Student', 'Startup Founder', 'Full-Stack/Machine Learning Developer', 'Coffee Enthusiast', 'Biscuit Expert']}
           loop={0}
           cursor
           cursorStyle="_"

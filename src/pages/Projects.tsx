@@ -32,6 +32,18 @@ const Projects: React.FC = () => {
     <section className="flex flex-col items-center justify-center w-full h-full min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-blue-950 px-4 py-12">
       <div className="max-w-5xl w-full mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">Projects</h2>
+        <div className="text-center mb-8">
+          <p className="text-gray-300 mb-4">Check out my latest work and contributions!</p>
+          <a
+            href="https://github.com/rayyankhan47"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded bg-gray-800 hover:bg-gray-700 text-white font-semibold shadow transition"
+          >
+            <FaGithub />
+            View On GitHub
+          </a>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div
