@@ -52,7 +52,7 @@ const projects: {
   },
   {
     title: 'NBA Match Outcome Predictor',
-    image: '/basketball.avif',
+    image: '/basketball.png',
     summary: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
     description: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
