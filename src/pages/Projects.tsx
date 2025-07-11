@@ -45,8 +45,8 @@ const projects: {
   {
     title: 'KNN Heart Disease Predictor',
     image: '/heart.jpg',
-    summary: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
-    description: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    summary: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    description: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
     links: [],
   },
