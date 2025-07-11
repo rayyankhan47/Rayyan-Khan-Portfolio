@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { ReactElement } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 // Define the type for project links
 type ProjectLink = {
