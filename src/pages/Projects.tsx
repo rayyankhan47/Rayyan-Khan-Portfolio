@@ -19,42 +19,50 @@ const projects: {
   links: ProjectLink[];
 }[] = [
   {
+    title: 'YulRentals.com',
+    image: '/yulrentalslogo.jpeg',
+    summary: 'A luxury car rental web application. It is built with the MERN stack and uses JWT authentication for security.',
+    description: 'Contributed to the development of a full-stack car rental booking platform using MERN stack, implementing JWT authentication, an admin dashboard, and a real-time booking system.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    links: [],
+  },
+  {
     title: 'Navvi - AI On-boarding Assistant',
     image: '/navvilogo.png',
-    summary: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
-    description: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    summary: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    description: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
     links: [],
   },
   {
     title: 'Console.text',
     image: '/console-dot-text.png',
-    summary: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
-    description: 'Lets developers add real-time error alerts and persistent storage to their apps with a single line of code, featuring a custom dashboard and SMS/call notifications.',
+    summary: 'Lets developers add real-time error alerts and persistent storage to their apps with a single line of code, featuring a custom dashboard and SMS/call notifications.',
+    description: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
     tech: ['JavaScript', 'Node.js', 'React.js', 'SQLite'],
     links: [],
   },
   {
     title: 'KNN Heart Disease Predictor',
     image: '/heart.jpg',
-    summary: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
-    description: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    summary: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    description: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
     links: [],
   },
   {
     title: 'NBA Match Outcome Predictor',
     image: '/basketball.avif',
-    summary: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
-    description: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
+    summary: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
+    description: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
     links: [],
   },
   {
     title: "Rayyan's Portfolio",
     image: '/portfolio.png',
-    summary: 'A modern, responsive portfolio website showcasing my projects, skills, and experience with smooth animations and a clean design.',
-    description: 'Obviously, I built my own portfolio..',
+    summary: 'Obviously, I built my own portfolio..',
+    description: 'A modern, responsive portfolio website showcasing my projects, skills, and experience with smooth animations and a clean design.',
     tech: ['TypeScript', 'React.js', 'TailwindCSS'],
     links: [],
   },
@@ -89,11 +97,66 @@ const Projects: React.FC = () => {
               <img src={project.image} alt={project.title} className="w-20 h-20 mb-4 rounded-lg object-cover bg-gray-800" />
               <h3 className="text-xl font-semibold text-blue-400 mb-2 text-center">{project.title}</h3>
               <p className="text-gray-300 text-center mb-2">{project.summary}</p>
-              <div className="flex flex-wrap gap-2 justify-center mt-2">
+              <div className="flex flex-wrap gap-2 justify-center mt-2 mb-3">
                 {project.tech.map((t) => (
                   <span key={t} className="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs font-mono">{t}</span>
                 ))}
               </div>
+              {project.title === 'YulRentals.com' && (
+                <a
+                  href="https://yulrentals-git-main-rayyan-khans-projects-68783307.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW LIVE
+                </a>
+              )}
+              {project.title === 'Navvi - AI On-boarding Assistant' && (
+                <a
+                  href="https://github.com/rayyankhan47/Navvi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW SOURCE CODE
+                </a>
+              )}
+              {project.title === 'Console.text' && (
+                <a
+                  href="https://github.com/rayyankhan47/console.text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW SOURCE CODE
+                </a>
+              )}
+              {project.title === 'KNN Heart Disease Predictor' && (
+                <a
+                  href="https://github.com/rayyankhan47/KNN-Heart-Disease-Predictor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW SOURCE CODE
+                </a>
+              )}
+              {project.title === 'NBA Match Outcome Predictor' && (
+                <a
+                  href="https://github.com/rayyankhan47/Basketball-Match-Predictor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW SOURCE CODE
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -122,6 +185,18 @@ const Projects: React.FC = () => {
                   <span key={t} className="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs font-mono">{t}</span>
                 ))}
               </div>
+              {projects[selected].title === 'YulRentals.com' && (
+                <a
+                  href="https://yulrentals-git-main-rayyan-khans-projects-68783307.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW LIVE
+                  </span>
+                </a>
+              )}
               {projects[selected].title === 'Navvi - AI On-boarding Assistant' && (
                 <a
                   href="https://github.com/rayyankhan47/Navvi"
