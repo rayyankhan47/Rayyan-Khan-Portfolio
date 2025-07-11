@@ -20,7 +20,7 @@ const projects: {
 }[] = [
   {
     title: 'Navvi - AI On-boarding Assistant',
-    image: '/vite.svg',
+    image: '/navvilogo.png',
     summary: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
     description: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
@@ -28,7 +28,7 @@ const projects: {
   },
   {
     title: 'Console.text',
-    image: '/vite.svg',
+    image: '/console-dot-text.png',
     summary: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
     description: 'Lets developers add real-time error alerts and persistent storage to their apps with a single line of code, featuring a custom dashboard and SMS/call notifications.',
     tech: ['JavaScript', 'Node.js', 'React.js', 'SQLite'],
@@ -36,7 +36,7 @@ const projects: {
   },
   {
     title: 'KNN Heart Disease Predictor',
-    image: '/vite.svg',
+    image: '/heart.jpg',
     summary: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
     description: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
@@ -44,7 +44,7 @@ const projects: {
   },
   {
     title: 'NBA Match Outcome Predictor',
-    image: '/vite.svg',
+    image: '/basketball.avif',
     summary: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
     description: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
@@ -52,7 +52,7 @@ const projects: {
   },
   {
     title: "Rayyan's Portfolio",
-    image: '/vite.svg',
+    image: '/portfolio.png',
     summary: 'A modern, responsive portfolio website showcasing my projects, skills, and experience with smooth animations and a clean design.',
     description: 'Obviously, I built my own portfolio..',
     tech: ['TypeScript', 'React.js', 'TailwindCSS'],
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
               className="bg-gray-900 bg-opacity-80 rounded-xl shadow-lg p-6 flex flex-col items-center cursor-pointer hover:scale-105 hover:shadow-2xl transition"
               onClick={() => setSelected(idx)}
             >
-              <img src={project.image} alt={project.title} className="w-20 h-20 mb-4 rounded-lg object-contain bg-gray-800" />
+              <img src={project.image} alt={project.title} className="w-20 h-20 mb-4 rounded-lg object-cover bg-gray-800" />
               <h3 className="text-xl font-semibold text-blue-400 mb-2 text-center">{project.title}</h3>
               <p className="text-gray-300 text-center mb-2">{project.summary}</p>
               <div className="flex flex-wrap gap-2 justify-center mt-2">
@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
               >
                 &times;
               </button>
-              <img src={projects[selected].image} alt={projects[selected].title} className="w-24 h-24 mb-4 rounded-lg object-contain bg-gray-800 mx-auto" />
+              <img src={projects[selected].image} alt={projects[selected].title} className="w-24 h-24 mb-4 rounded-lg object-cover bg-gray-800 mx-auto" />
               <h3 className="text-2xl font-bold text-blue-400 mb-2 text-center">{projects[selected].title}</h3>
               <p className="text-gray-200 mb-4 text-center">{projects[selected].description}</p>
               <div className="flex flex-wrap gap-2 justify-center mb-4">
@@ -122,6 +122,54 @@ const Projects: React.FC = () => {
                   <span key={t} className="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs font-mono">{t}</span>
                 ))}
               </div>
+              {projects[selected].title === 'Navvi - AI On-boarding Assistant' && (
+                <a
+                  href="https://github.com/rayyankhan47/Navvi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW SOURCE CODE
+                  </span>
+                </a>
+              )}
+              {projects[selected].title === 'Console.text' && (
+                <a
+                  href="https://github.com/rayyankhan47/console.text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW SOURCE CODE
+                  </span>
+                </a>
+              )}
+              {projects[selected].title === 'KNN Heart Disease Predictor' && (
+                <a
+                  href="https://github.com/rayyankhan47/KNN-Heart-Disease-Predictor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW SOURCE CODE
+                  </span>
+                </a>
+              )}
+              {projects[selected].title === 'NBA Match Outcome Predictor' && (
+                <a
+                  href="https://github.com/rayyankhan47/Basketball-Match-Predictor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW SOURCE CODE
+                  </span>
+                </a>
+              )}
               <div className="flex gap-4 justify-center">
                 {projects[selected].links.map((link) => (
                   <a
