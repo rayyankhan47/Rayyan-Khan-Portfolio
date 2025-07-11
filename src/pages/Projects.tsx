@@ -1,27 +1,62 @@
 import React, { useState } from 'react';
+import type { ReactElement } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const projects = [
+// Define the type for project links
+type ProjectLink = {
+  label: string;
+  url: string;
+  icon: ReactElement;
+};
+
+// Type the projects array
+const projects: {
+  title: string;
+  image: string;
+  summary: string;
+  description: string;
+  tech: string[];
+  links: ProjectLink[];
+}[] = [
   {
-    title: 'Personal Portfolio',
+    title: 'Navvi - AI On-boarding Assistant',
     image: '/vite.svg',
-    summary: 'A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.',
-    description: 'This portfolio showcases my projects, work experience, and skills. It features smooth animations, a contact form, and a mobile-first design.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/rayyankhan47/Rayyan-Khan-Portfolio', icon: <FaGithub /> },
-      { label: 'Live Site', url: 'https://rayyan.dev', icon: <FaExternalLinkAlt /> },
-    ],
+    summary: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
+    description: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    links: [],
   },
   {
-    title: 'ML Project Example',
+    title: 'Console.text',
     image: '/vite.svg',
-    summary: 'A machine learning project using Python, scikit-learn, and YOLO.',
-    description: 'This project demonstrates object detection and classification using YOLO and scikit-learn pipelines.',
-    tech: ['Python', 'YOLO', 'scikit-learn'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/rayyankhan47/ml-project', icon: <FaGithub /> },
-    ],
+    summary: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
+    description: 'Lets developers add real-time error alerts and persistent storage to their apps with a single line of code, featuring a custom dashboard and SMS/call notifications.',
+    tech: ['JavaScript', 'Node.js', 'React.js', 'SQLite'],
+    links: [],
+  },
+  {
+    title: 'KNN Heart Disease Predictor',
+    image: '/vite.svg',
+    summary: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
+    description: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    tech: ['Pandas', 'Scikit-Learn', 'Python'],
+    links: [],
+  },
+  {
+    title: 'NBA Match Outcome Predictor',
+    image: '/vite.svg',
+    summary: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
+    description: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
+    tech: ['Pandas', 'Scikit-Learn', 'Python'],
+    links: [],
+  },
+  {
+    title: "Rayyan's Portfolio",
+    image: '/vite.svg',
+    summary: 'A modern, responsive portfolio website showcasing my projects, skills, and experience with smooth animations and a clean design.',
+    description: 'Obviously, I built my own portfolio..',
+    tech: ['TypeScript', 'React.js', 'TailwindCSS'],
+    links: [],
   },
 ];
 
@@ -64,8 +99,14 @@ const Projects: React.FC = () => {
         </div>
         {/* Modal */}
         {selected !== null && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-            <div className="bg-gray-900 rounded-xl shadow-2xl p-8 max-w-lg w-full relative animate-fadeIn">
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+            onClick={() => setSelected(null)}
+          >
+            <div 
+              className="bg-gray-900 rounded-xl shadow-2xl p-8 max-w-lg w-full relative animate-fadeIn"
+              onClick={(e) => e.stopPropagation()}
+            >
               <button
                 className="absolute top-2 right-2 text-gray-400 hover:text-blue-400 text-2xl font-bold"
                 onClick={() => setSelected(null)}
