@@ -3,19 +3,27 @@ import { FaBuilding, FaLaptopCode } from 'react-icons/fa';
 
 const experiences = [
   {
-    role: 'Software Engineering Intern',
-    company: 'Tech Startup',
-    logo: <FaLaptopCode className="text-blue-400 text-2xl" />,
-    dates: 'May 2023 – Aug 2023',
-    description: 'Worked on building scalable web applications, implemented new features, and collaborated with cross-functional teams to deliver high-quality software.',
-    tech: ['React', 'Node.js', 'MongoDB', 'AWS'],
+    role: 'Algoverse - AI Researcher',
+    company: 'Remote',
+    logo: <FaBuilding className="text-blue-400 text-2xl" />,
+    dates: 'July 2025 - Present',
+    description: 'Participating in Algoverse, a leading AI research program with personalized mentorship from world class AI researchers at Meta, UC Berkeley, Stanford, Cornell, and UC San Diego.',
+    tech: ['Python', 'scikit-learn', 'TensorFlow'],
   },
   {
-    role: 'Research Assistant',
+    role: 'Software Developer',
+    company: 'YULRentals',
+    logo: <FaLaptopCode className="text-blue-400 text-2xl" />,
+    dates: 'May 2025 - July 2025',
+    description: 'Contributed to the development of a full-stack car rental booking platform using MERN stack, implementing JWT authentication, an admin dashboard with CRUD operations, and a real-time booking system, resulting in a production-ready application.',
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'ImageKit'],
+  },
+  {
+    role: 'MAIS 202 - Machine Learning Workshop',
     company: 'McGill University',
     logo: <FaBuilding className="text-blue-400 text-2xl" />,
-    dates: 'Sep 2022 – Apr 2023',
-    description: 'Conducted research in machine learning, developed data pipelines, and contributed to academic publications.',
+    dates: 'February 2025 - April 2025',
+    description: 'Participated in MAIS 202, an 8-week intensive ML/AI workshop hosted by AI student researchers, learning about core Machine Learning Principles, Neural Networks, Convolutional Neural Networks, and more, for the purpose of a cumulative CNN project.',
     tech: ['Python', 'scikit-learn', 'TensorFlow'],
   },
 ];
@@ -37,6 +45,16 @@ const Work: React.FC = () => (
               </div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="font-semibold text-white">{exp.company}</span>
+                {exp.company === 'YULRentals' && (
+                  <a
+                    href="https://yulrentals-git-main-rayyan-khans-projects-68783307.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm transition"
+                  >
+                    (view here!)
+                  </a>
+                )}
               </div>
               <p className="text-gray-300 mb-2">{exp.description}</p>
               {exp.tech && (
