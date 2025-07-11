@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <Link to="/projects" className="hover:text-blue-300 transition">Projects</Link>
           <Link to="/work" className="hover:text-blue-300 transition">Work</Link>
           <Link to="/contact" className="hover:text-blue-300 transition">Contact</Link>
-        </div>
+      </div>
 
         {/* Mobile Hamburger Button */}
         <button

@@ -19,6 +19,14 @@ const projects: {
   links: ProjectLink[];
 }[] = [
   {
+    title: 'ParlonsCégep',
+    image: '/parlonscegeplogo.png',
+    summary: 'Startup (In Development)',
+    description: '(In Development)',
+    tech: [],
+    links: [],
+  },
+  {
     title: 'YulRentals.com',
     image: '/yulrentalslogo.jpeg',
     summary: 'A luxury car rental web application. It is built with the MERN stack and uses JWT authentication for security.',
