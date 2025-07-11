@@ -37,8 +37,8 @@ const projects: {
   {
     title: 'Navvi - AI On-boarding Assistant',
     image: '/navvilogo.png',
-    summary: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
-    description: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    summary: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    description: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
     links: [],
   },
