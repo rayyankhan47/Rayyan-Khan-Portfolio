@@ -122,15 +122,26 @@ const Projects: React.FC = () => {
                 </a>
               )}
               {project.title === 'Navvi - AI On-boarding Assistant' && (
-                <a
-                  href="https://github.com/rayyankhan47/Navvi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  VIEW SOURCE CODE
-                </a>
+                <>
+                  <a
+                    href="https://navvi-nu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors mr-3"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    VIEW LIVE
+                  </a>
+                  <a
+                    href="https://github.com/rayyankhan47/Navvi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    VIEW SOURCE CODE
+                  </a>
+                </>
               )}
               {project.title === 'Console.text' && (
                 <a
@@ -206,16 +217,28 @@ const Projects: React.FC = () => {
                 </a>
               )}
               {projects[selected].title === 'Navvi - AI On-boarding Assistant' && (
-                <a
-                  href="https://github.com/rayyankhan47/Navvi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center mb-4"
-                >
-                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
-                    VIEW SOURCE CODE
-                  </span>
-                </a>
+                <>
+                  <a
+                    href="https://navvi-nu.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center mb-2"
+                  >
+                    <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                      VIEW LIVE
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/rayyankhan47/Navvi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center mb-4"
+                  >
+                    <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                      VIEW SOURCE CODE
+                    </span>
+                  </a>
+                </>
               )}
               {projects[selected].title === 'Console.text' && (
                 <a
