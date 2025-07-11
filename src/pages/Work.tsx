@@ -19,6 +19,14 @@ const experiences = [
     tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'ImageKit'],
   },
   {
+    role: 'Founder & Lead Engineer',
+    company: 'ParlonsCégep',
+    logo: <FaLaptopCode className="text-blue-400 text-2xl" />,
+    dates: 'March 2025 - Present',
+    description: 'Leading the development of Québec\'s first dedicated social platform for CEGEP students, overseeing a cross-functional team of software engineering and marketing.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+  },
+  {
     role: 'MAIS 202 - Machine Learning Workshop',
     company: 'McGill University',
     logo: <FaBuilding className="text-blue-400 text-2xl" />,
