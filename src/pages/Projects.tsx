@@ -23,7 +23,7 @@ const projects: {
     image: '/parlonscegeplogo.png',
     summary: 'Startup (In Development)',
     description: '(In Development)',
-    tech: [],
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
     links: [],
   },
   {
@@ -31,7 +31,7 @@ const projects: {
     image: '/yulrentalslogo.jpeg',
     summary: 'A luxury car rental web application. It is built with the MERN stack and uses JWT authentication for security.',
     description: 'Contributed to the development of a full-stack car rental booking platform using MERN stack, implementing JWT authentication, an admin dashboard, and a real-time booking system.',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
     links: [],
   },
   {
@@ -39,7 +39,7 @@ const projects: {
     image: '/navvilogo.png',
     summary: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
     description: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
     links: [],
   },
   {
