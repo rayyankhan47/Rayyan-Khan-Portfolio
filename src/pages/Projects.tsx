@@ -47,7 +47,7 @@ const projects: {
     image: '/redstone.png',
     summary: 'GitHub for redstone engineers.',
     description: 'RedstoneHub is a comprehensive version control system designed specifically for redstone engineers. It allows you to track changes to your redstone builds, collaborate with other engineers, and maintain a history of your circuit development.',
-    tech: ['TypeScript', 'React', 'PostgreSQL'],
+    tech: ['TypeScript', 'React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Three.js'],
     links: [],
   },
   {
