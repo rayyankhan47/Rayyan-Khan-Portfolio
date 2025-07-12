@@ -35,9 +35,9 @@ const projects: {
     links: [],
   },
   {
-    title: 'Navvi - AI On-boarding Assistant',
+    title: 'Navvi - AI Onboarding Assistant',
     image: '/navvilogo.png',
-    summary: 'Helps new developers ramp up quickly by providing codebase dependency graphs, onboarding guides, and secure integration with GitHub and OAuth.',
+    summary: 'Automates the onboarding process for new developers.',
     description: 'A platform that analyzes code repositories and generates interactive onboarding guides and personalized learning paths for new developers.',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
     links: [],
@@ -53,7 +53,7 @@ const projects: {
   {
     title: 'Console.text',
     image: '/console-dot-text.png',
-    summary: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
+    summary: 'DataDog and PagerDuty for mid-level startups.',
     description: 'Lets developers add real-time error alerts and persistent storage to their apps with a single line of code, featuring a custom dashboard and SMS/call notifications.',
     tech: ['JavaScript', 'Node.js', 'React.js', 'SQLite'],
     links: [],
@@ -61,7 +61,7 @@ const projects: {
   {
     title: 'KNN Heart Disease Predictor',
     image: '/heart.png',
-    summary: 'Predicts heart disease risk from clinical data, supporting early intervention and improved patient outcomes.',
+    summary: 'Predicts heart disease risk from clinical data.',
     description: 'A machine learning project that predicts the likelihood of heart disease using real-world clinical data, helping to identify at-risk patients with high accuracy.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
     links: [],
@@ -69,7 +69,7 @@ const projects: {
   {
     title: 'NBA Match Outcome Predictor',
     image: '/basketball.png',
-    summary: 'Forecasts NBA game results using historical data and player stats, offering insights into likely match outcomes.',
+    summary: 'Forecasts NBA game results using historical data and player stats.',
     description: 'A data science project that forecasts NBA game results by analyzing historical match data and player statistics to provide insights into likely outcomes.',
     tech: ['Pandas', 'Scikit-Learn', 'Python'],
     links: [],
