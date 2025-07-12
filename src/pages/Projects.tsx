@@ -129,7 +129,7 @@ const Projects: React.FC = () => {
                   VIEW LIVE
                 </a>
               )}
-              {project.title === 'Navvi - AI On-boarding Assistant' && (
+              {project.title === 'Navvi - AI Onboarding Assistant' && (
                 <>
                   <a
                     href="https://navvi-nu.vercel.app/"
