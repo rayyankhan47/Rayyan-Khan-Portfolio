@@ -43,6 +43,14 @@ const projects: {
     links: [],
   },
   {
+    title: 'RedstoneHub',
+    image: '/redstone.png',
+    summary: 'GitHub for redstone engineers.',
+    description: 'RedstoneHub is a comprehensive version control system designed specifically for redstone engineers. It allows you to track changes to your redstone builds, collaborate with other engineers, and maintain a history of your circuit development.',
+    tech: ['TypeScript', 'React', 'PostgreSQL'],
+    links: [],
+  },
+  {
     title: 'Console.text',
     image: '/console-dot-text.png',
     summary: 'A full-stack error monitoring and alerting platform that enables developers to receive instant notifications for critical errors with minimal setup.',
@@ -143,6 +151,17 @@ const Projects: React.FC = () => {
                   </a>
                 </>
               )}
+              {project.title === 'RedstoneHub' && (
+                <a
+                  href="https://github.com/rayyankhan47/RedstoneHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  VIEW SOURCE CODE
+                </a>
+              )}
               {project.title === 'Console.text' && (
                 <a
                   href="https://github.com/rayyankhan47/console.text"
@@ -239,6 +258,18 @@ const Projects: React.FC = () => {
                     </span>
                   </a>
                 </>
+              )}
+              {projects[selected].title === 'RedstoneHub' && (
+                <a
+                  href="https://github.com/rayyankhan47/RedstoneHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center mb-4"
+                >
+                  <span className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
+                    VIEW SOURCE CODE
+                  </span>
+                </a>
               )}
               {projects[selected].title === 'Console.text' && (
                 <a
