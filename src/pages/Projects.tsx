@@ -23,7 +23,7 @@ const projects: {
     image: '/parlonscegeplogo.png',
     summary: 'Startup (In Development)',
     description: '(In Development)',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+    tech: ['Spring Boot', 'TypeScript', 'React.js', 'PostgreSQL'],
     links: [],
   },
   {
