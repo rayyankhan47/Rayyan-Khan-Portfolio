@@ -42,7 +42,7 @@ const About: React.FC = () => (
         <img
           src={profileImg}
           alt="Rayyan Khan profile"
-          className="w-full h-full object-cover object-center transform scale-125"
+          className="w-full h-full object-cover object-bottom"
         />
       </div>
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">About Me</h2>
