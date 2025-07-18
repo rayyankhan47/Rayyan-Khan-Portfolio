@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaPython, FaGithub, FaJava, FaAws, FaDocker, FaDatabase, FaCogs } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiNextdotjs, SiSpringboot, SiExpress, SiPostman, SiC, SiHtml5, SiCss3, SiPytorch, SiTensorflow, SiPostgresql } from 'react-icons/si';
-import profileImg from '../assets/McGillHeadshot.png';
+import profileImg from '../assets/rayyan.jpg';
 
 const languages = [
   { name: 'Python', icon: <FaPython className="text-yellow-300" /> },
