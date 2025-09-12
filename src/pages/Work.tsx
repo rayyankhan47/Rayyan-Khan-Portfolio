@@ -3,15 +3,15 @@ import { FaBuilding, FaLaptopCode } from 'react-icons/fa';
 
 const experiences = [
   {
-    role: 'Algoverse - AI Researcher',
-    company: 'Remote',
-    logo: <FaBuilding className="text-blue-400 text-2xl" />,
-    dates: 'July 2025 - Present',
-    description: 'Participating in Algoverse, a leading AI research program with personalized mentorship from world class AI researchers at Meta, UC Berkeley, Stanford, Cornell, and UC San Diego.',
-    tech: ['Python', 'scikit-learn', 'TensorFlow'],
+    role: 'Software Developer Intern',
+    company: 'Quantolio',
+    logo: <FaLaptopCode className="text-blue-400 text-2xl" />,
+    dates: 'Sept 2025 - Present',
+    description: 'Fintech startup',
+    tech: ['Python', 'PostgreSQL', 'Docker', 'AWS'],
   },
   {
-    role: 'Software Developer',
+    role: 'Freelance Web Developer',
     company: 'YULRentals',
     logo: <FaLaptopCode className="text-blue-400 text-2xl" />,
     dates: 'May 2025 - July 2025',
