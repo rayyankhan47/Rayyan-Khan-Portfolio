@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwpooqva';
 
@@ -28,30 +27,125 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center w-full h-full min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-blue-950 px-4 py-12">
-      <div className="max-w-lg w-full bg-gray-900 bg-opacity-80 rounded-xl shadow-lg p-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Contact</h2>
-        <p className="text-gray-300 mb-6">Feel free to reach out for opportunities, collaborations, or just to connect!</p>
-        <div className="flex justify-center gap-6 mb-8">
-          <a href="https://www.linkedin.com/in/rayyankhan1/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-3xl transition" aria-label="LinkedIn">
-            <FaLinkedin />
-          </a>
-          <a href="mailto:rayyankhan47@gmail.com" className="text-blue-400 hover:text-blue-300 text-3xl transition" aria-label="Email">
-            <FaEnvelope />
-          </a>
+    <section className="max-w-4xl mx-auto px-6 py-16">
+      <div className="space-y-8">
+        <div>
+          <h1 className="mb-4">Contact</h1>
+          <p className="text-gray-700">
+            Feel free to reach out for opportunities, collaborations, or just to connect.
+          </p>
         </div>
-        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-          <input name="name" type="text" required placeholder="Name" className="rounded px-4 py-2 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <input name="email" type="email" required placeholder="Email" className="rounded px-4 py-2 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <input name="subject" type="text" required placeholder="Subject" className="rounded px-4 py-2 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <textarea name="message" required placeholder="Message" rows={5} className="rounded px-4 py-2 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <button type="submit" className="mt-2 px-6 py-2 rounded bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow transition">Send Message</button>
-        </form>
-        {status === 'success' && <p className="text-green-400 mt-4">Message sent! Thank you.</p>}
-        {status === 'error' && <p className="text-red-400 mt-4">Something went wrong. Please try again.</p>}
+
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold mb-2">Email</h3>
+              <a 
+                href="mailto:rayyankhan47@gmail.com"
+                className="text-gray-700 hover:text-black"
+              >
+                rayyankhan47@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-2">LinkedIn</h3>
+              <a 
+                href="https://www.linkedin.com/in/rayyankhan1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black"
+              >
+                linkedin.com/in/rayyankhan1
+              </a>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-2">GitHub</h3>
+              <a 
+                href="https://github.com/rayyankhan47"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black"
+              >
+                github.com/rayyankhan47
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-black transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-black transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium mb-1">
+                  Subject
+                </label>
+                <input
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-black transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-1">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={5}
+                  className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-black transition resize-none"
+                />
+              </div>
+
+              <button 
+                type="submit"
+                className="w-full px-4 py-2 bg-black text-white text-sm font-medium rounded hover:bg-gray-800 transition"
+              >
+                Send Message
+              </button>
+
+              {status === 'success' && (
+                <p className="text-sm text-green-700">Message sent successfully! Thank you.</p>
+              )}
+              {status === 'error' && (
+                <p className="text-sm text-red-700">Something went wrong. Please try again.</p>
+              )}
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Contact; 
+export default Contact;
