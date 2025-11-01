@@ -211,6 +211,13 @@ const Home: React.FC = () => (
                       </tr>
                       <tr>
                         <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          President
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Best Buddies Canada, Dawson College Branch</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Aug 2023 – May 2024</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
                           Volunteer Tutor (Math, Physics, Chemistry)
                         </td>
                         <td className="border border-gray-300 px-4 py-2 text-gray-700">Dawson College</td>
@@ -222,13 +229,6 @@ const Home: React.FC = () => (
                         </td>
                         <td className="border border-gray-300 px-4 py-2 text-gray-700">Muslim Student Association of Dawson College</td>
                         <td className="border border-gray-300 px-4 py-2 text-gray-700">Sep 2022 – Jan 2024</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
-                          President
-                        </td>
-                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Best Buddies Canada, Dawson College Branch</td>
-                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Aug 2023 – May 2024</td>
                       </tr>
                     </tbody>
                   </table>
