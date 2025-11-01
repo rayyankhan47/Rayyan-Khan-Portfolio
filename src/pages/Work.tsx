@@ -3,7 +3,7 @@ import React from 'react';
 const experiences = [
   {
     role: 'Software Developer Intern',
-    company: 'Thermolio',
+    company: 'Quantolio',
     dates: 'September 2025 - Present',
     description: 'Working on HVAC smart AI applications.',
     tech: ['TypeScript', 'Next.js', 'FastAPI', 'PostgreSQL', 'Docker', 'AWS'],
