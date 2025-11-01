@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaPython, FaJava, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { SiTypescript, SiHtml5, SiCss3, SiC, SiNextdotjs, SiExpress } from 'react-icons/si';
 
 const Home: React.FC = () => (
   <section className="max-w-7xl mx-auto px-6 py-16">
@@ -69,6 +71,25 @@ const Home: React.FC = () => (
               </svg>
               YouTube
             </a>
+          </div>
+
+          {/* Technology Icons - Languages */}
+          <div className="flex flex-wrap gap-3">
+            <FaPython className="w-6 h-6 text-gray-700" title="Python" />
+            <FaJava className="w-6 h-6 text-gray-700" title="Java" />
+            <SiTypescript className="w-6 h-6 text-gray-700" title="TypeScript" />
+            <FaDatabase className="w-6 h-6 text-gray-700" title="SQL" />
+            <SiHtml5 className="w-6 h-6 text-gray-700" title="HTML" />
+            <SiCss3 className="w-6 h-6 text-gray-700" title="CSS" />
+            <SiC className="w-6 h-6 text-gray-700" title="C" />
+          </div>
+
+          {/* Technology Icons - Frameworks */}
+          <div className="flex flex-wrap gap-3 pt-2">
+            <FaReact className="w-6 h-6 text-gray-700" title="React" />
+            <SiNextdotjs className="w-6 h-6 text-gray-700" title="Next.js" />
+            <FaNodeJs className="w-6 h-6 text-gray-700" title="Node.js" />
+            <SiExpress className="w-6 h-6 text-gray-700" title="Express.js" />
           </div>
         </div>
       </aside>
