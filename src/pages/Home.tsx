@@ -104,7 +104,10 @@ const Home: React.FC = () => (
               <h2 className="font-bold text-xl mb-2">About Me</h2>
               <div className="border-b border-gray-300 mb-4"></div>
               <div className="space-y-4">
-                <h3 className="font-bold text-lg mb-2">🎓 Academic Background</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-1 h-6 bg-gray-400"></div>
+                  <h3 className="font-bold text-lg">🎓 Academic Background</h3>
+                </div>
                 <p className="text-gray-700 leading-relaxed">
                   I hold a Diploma of College Studies in Health Sciences from <a href="https://www.dawsoncollege.qc.ca/">Dawson College</a>.
                   Here, I built a strong foundation in <b>problem-solving</b> and <b>critical thinking</b>, while especially developing a passion for <b>community service</b>, <b>leadership</b>, and <b>education advocacy</b>.
@@ -125,7 +128,10 @@ const Home: React.FC = () => (
                 I am also currently working as a Software Engineer Intern at <a target="_blank" rel="noopener noreferrer" href="https://www.quantolio.com/">Quantolio</a>, where I am working with a Next.js, TypeScript, FastAPI, AWS, and Docker tech stack.
                 </p>
 
-                <h3 className="font-bold text-lg mb-2">🎤 Education Advocacy Initiatives</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-1 h-6 bg-gray-400"></div>
+                  <h3 className="font-bold text-lg">🎤 Education Advocacy Initiatives</h3>
+                </div>
                 <p className="text-gray-700 leading-relaxed">
                   Ever since 2020, I have been extremely passionate about advocating for the importance of education, and have had the wonderful opportunity to be involved in various initiatives to help spread this message:
                   <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-4 mt-3">
@@ -142,7 +148,29 @@ const Home: React.FC = () => (
                   </ul>
                 </p>
 
-                <h3 className="font-bold text-lg mb-4">👥 Leadership, Service, and Engagement ✨</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-1 h-6 bg-gray-400"></div>
+                  <h3 className="font-bold text-lg">🎨 Personal Endeavours & Hobbies</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  When I'm not working or studying, I enjoy:
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-4 mt-3">
+                    <li>
+                      <b>Learning about LLMs</b>: My particular interests in AI either lie in applications of AI & robotics, or otherwise (and more significantly) in Large Language Models. I'm currently trying to rebuild GPT-2's 124M model from scratch for pedagogical purposes, inspired by Andrej Karpathy's playlist titled <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=H61Jul5CuI6pO7eh">"Neural Networks: Zero to Hero"</a>.
+                    </li>
+                    <li>
+                      <b>Content Creation</b>: I have been creating content on several YouTube channels ever since 2015, and as of <b>October 2025</b>, I have been recording my progress while I try to become a successful and skilled programmer, <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/playlist?list=PLHgYCxmJQu-cUsrloeCrLjIdlR2_yksf1&si=p_cBXQ8BkybhWLZ3">which you can watch here</a>. 
+                    </li>
+                    <li>
+                      <b>Reading Math & CS books/papers</b>: I enjoy reading books and papers about mathematics and computer science, and I'm currently reading <i><b><a target="_blank" rel="noopener noreferrer" href="http://abstract.ups.edu/">Abstract Algebra: Theory and Applications</a></b> by Thomas W. Judson</i>, and <i><b><a target="_blank" rel="noopener noreferrer" href="https://www.akkadia.org/drepper/cpumemory.pdf">What Every Programmer Should Know About Memory</a></b> by Ulrich Drepper</i>.
+                    </li>
+                  </ul>
+                </p>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-1 h-6 bg-gray-400"></div>
+                  <h3 className="font-bold text-lg">👥 Leadership, Service, and Engagement</h3>
+                </div>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse border border-gray-300">
                     <thead>

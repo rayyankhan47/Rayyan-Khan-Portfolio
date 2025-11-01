@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { fetchPinnedRepos, fetchStarredRepos } from '../services/github';
+import { fetchSpecificRepos, fetchSpecificStarredRepos } from '../services/github';
 import type { GitHubRepo } from '../services/github';
 
 const Projects: React.FC = () => {
-  const [pinnedRepos, setPinnedRepos] = useState<GitHubRepo[]>([]);
+  const [myRepos, setMyRepos] = useState<GitHubRepo[]>([]);
   const [starredRepos, setStarredRepos] = useState<GitHubRepo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -12,11 +12,21 @@ const Projects: React.FC = () => {
     const loadRepos = async () => {
       try {
         setLoading(true);
-        const [pinned, starred] = await Promise.all([
-          fetchPinnedRepos('rayyankhan47'),
-          fetchStarredRepos('rayyankhan47'),
+        const myProjectNames = ['Navvi', 'Basketball-Match-Predictor', 'KNN-Heart-Disease-Predictor', 'micrograd', 'learning-fastapi'];
+        const starredRepoNames = [
+          'Awesome-Multi-Task-Learning',
+          'must-read-papers-for-ml',
+          'Category_Theory_Machine_Learning',
+          'awesome',
+          'awesome-self-supervised-learning',
+          'project-based-learning',
+          'leetcode-company-wise-problems'
+        ];
+        const [myProjects, starred] = await Promise.all([
+          fetchSpecificRepos('rayyankhan47', myProjectNames),
+          fetchSpecificStarredRepos('rayyankhan47', starredRepoNames),
         ]);
-        setPinnedRepos(pinned);
+        setMyRepos(myProjects);
         setStarredRepos(starred);
         setError(null);
       } catch (err) {
@@ -88,9 +98,8 @@ const Projects: React.FC = () => {
           </div>
         )}
 
-        <div className="flex items-center gap-4 text-xs text-gray-500 pt-2">
-          <span>⭐ {repo.stargazers_count}</span>
-          {repo.homepage && (
+        {repo.homepage && (
+          <div className="text-xs text-gray-500 pt-2">
             <a
               href={repo.homepage}
               target="_blank"
@@ -99,8 +108,8 @@ const Projects: React.FC = () => {
             >
               Live Demo →
             </a>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </article>
   );
@@ -115,14 +124,14 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        {/* My Projects (Pinned) */}
+        {/* My Projects */}
         <div>
           <h2 className="mb-6">My Projects</h2>
-          {pinnedRepos.length === 0 ? (
+          {myRepos.length === 0 ? (
             <p className="text-gray-600">No projects found.</p>
           ) : (
             <div className="grid gap-6">
-              {pinnedRepos.map((repo) => (
+              {myRepos.map((repo) => (
                 <RepoCard key={repo.id} repo={repo} />
               ))}
             </div>
@@ -140,7 +149,7 @@ const Projects: React.FC = () => {
             <p className="text-gray-600">No starred repositories found.</p>
           ) : (
             <div className="grid gap-6">
-              {starredRepos.slice(0, 12).map((repo) => (
+              {starredRepos.map((repo) => (
                 <RepoCard key={repo.id} repo={repo} />
               ))}
             </div>
