@@ -73,6 +73,40 @@ const Home: React.FC = () => (
               <cite className="block text-sm text-gray-500 not-italic mt-2">— Carl Friedrich Gauss</cite>
             </blockquote>
           </div>
+
+          {/* About Me Section */}
+          <div className="space-y-6">
+            <div>
+              <h2 className="font-bold text-xl mb-2">About Me</h2>
+              <div className="border-b border-gray-300 mb-4"></div>
+              <div className="space-y-4">
+                <h3 className="font-bold text-lg mb-2">🎓 Academic Background</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  I hold a Diploma of College Studies in Health Sciences from <a href="https://www.dawsoncollege.qc.ca/">Dawson College</a>.
+                  Here, I built a strong foundation in <b>problem-solving</b> and <b>critical thinking</b>, while especially developing a passion for
+                  <b>community service</b> and <b>leadership</b>.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Although I was initially interested in pursuing a career in medicine, I found a deep and sincere passion for <b>mathematics</b>,
+                  which has changed the way I will forever view this beautiful and complex subject. My interests in mathematics currently lie
+                  in <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2007.07927">Algebraic Topology & Graph Theory</a> and <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2510.26745">applications of Geometry to Large Language Models.</a>
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>.
+                  Hello.
+                </p>
+              </div>
+            </div>
+
+            {/* Affiliation Section */}
+            <div>
+              <h3 className="font-bold text-xl mb-2">Affiliation</h3>
+              <div className="border-b border-gray-300 mb-4"></div>
+              <div className="flex gap-6 flex-wrap">
+                {/* Add your 4 logos here */}
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
