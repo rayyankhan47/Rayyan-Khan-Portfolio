@@ -6,6 +6,14 @@ const Home: React.FC = () => (
       {/* Sidebar */}
       <aside className="w-64 flex-shrink-0">
         <div className="space-y-6">
+          <div className="w-40 h-40 mx-auto overflow-hidden rounded-full">
+            <img 
+              src="/headshot.png" 
+              alt="Rayyan Khan" 
+              className="w-full h-full object-cover scale-110"
+            />
+          </div>
+          
           <div>
             <h1 className="text-2xl font-bold mb-2">
               Rayyan Ahmed Khan
@@ -49,6 +57,18 @@ const Home: React.FC = () => (
               </svg>
               LinkedIn
             </a>
+            
+            <a 
+              href="https://youtube.com/@mathrayyan?si=EF1Eb5ZSRiG0WWMH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-gray-700 hover:text-black transition"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+              YouTube
+            </a>
           </div>
         </div>
       </aside>
@@ -57,14 +77,18 @@ const Home: React.FC = () => (
       <main className="flex-1">
         <div className="space-y-8">
           <div className="prose prose-lg max-w-none">
-            <div className="w-full max-w-2xl mb-8 overflow-hidden h-48">
-              <img 
-                src="/mathpic.png" 
-                alt="Mathematics" 
-                className="w-full h-full object-cover object-[73%_27%]"
-              />
-            </div>
-            <h2 className="mb-4">👋🏽 Hi, I'm Rayyan Khan!</h2>
+            <h2 className="mb-4">👋🏽 Hi, I'm Rayyan!</h2>
+          </div>
+
+          <div className="mb-6 flex flex-col items-start">
+            <img 
+              src="/csbros.png" 
+              alt="CS buddies in Toronto" 
+              className="max-w-2xl w-full rounded-lg shadow-md"
+            />
+            <p className="text-sm text-gray-600 mt-3 italic">
+              Me (blue shirt) and some CS buddies in my favourite city, Toronto, post-hackathon
+            </p>
           </div>
 
           <div className="flex border-l-4 border-gray-400 pl-6 py-2 my-8">
@@ -83,8 +107,7 @@ const Home: React.FC = () => (
                 <h3 className="font-bold text-lg mb-2">🎓 Academic Background</h3>
                 <p className="text-gray-700 leading-relaxed">
                   I hold a Diploma of College Studies in Health Sciences from <a href="https://www.dawsoncollege.qc.ca/">Dawson College</a>.
-                  Here, I built a strong foundation in <b>problem-solving</b> and <b>critical thinking</b>, while especially developing a passion for
-                  <b>community service</b> and <b>leadership</b>.
+                  Here, I built a strong foundation in <b>problem-solving</b> and <b>critical thinking</b>, while especially developing a passion for <b>community service</b>, <b>leadership</b>, and <b>education advocacy</b>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Although I was initially interested in pursuing a career in medicine, I found a deep and sincere passion for <b>mathematics</b>,
@@ -92,15 +115,36 @@ const Home: React.FC = () => (
                   in <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2007.07927">Algebraic Topology & Graph Theory</a> and <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2510.26745">applications of Geometry to Large Language Models.</a>
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>.
-                  Hello.
+                  Although I have a strong passion for the above, I have also ended up finding a strong interest in <b>computer science</b>,
+                  and have especially been exploring the worlds of <b>machine learning</b> and <b>software engineering</b>.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>, with an expected graduation date of May 2028.
+                </p>
+
+                <h3 className="font-bold text-lg mb-2">🎤 Education Advocacy Initiatives</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Ever since 2020, I have been extremely passionate about advocating for the importance of education, and have had the wonderful opportunity to be involved in various initiatives to help spread this message.
+                  Some of these initiatives include:
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=3QA8cwoKIoY"><b>The Mindful Students Podcast (2023)</b></a>: A podcast interview with Qasim Mughal, a second year medical student at McGill University, where we discussed his academic path towards medicine.
+                    </li>
+                    <li>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/muslimyouthspace_uarr/"><b>UARR Muslim Youth Space (2021)</b></a>: I was fortunate enough to be selected as a workshop speaker, alongside peers, and present a topic of our choice.
+                      Our topic was "The Importance of Education Through the Islamic Perspective", where I had the opportunity to share my personal journey from being an underperforming and uninterested student to a successful and passionate one through my faith.
+                    </li>
+                    <li>
+                      <b>High School To College Workshop (2023)</b>: A friend and I organized workshops for high school students at our alma mater to help them prepare for the Québec collegiate (CÉGEP) experience.
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>
 
             {/* Affiliation Section */}
             <div>
-              <h3 className="font-bold text-xl mb-2">Affiliation</h3>
+              <h2 className="font-bold text-xl mb-2">Affiliation</h2>
               <div className="border-b border-gray-300 mb-4"></div>
               <div className="flex gap-6 flex-wrap">
                 {/* Add your 4 logos here */}
