@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => (
   <section className="max-w-7xl mx-auto px-6 py-16">
@@ -7,19 +6,11 @@ const Home: React.FC = () => (
       {/* Sidebar */}
       <aside className="w-64 flex-shrink-0">
         <div className="space-y-6">
-          <div className="w-40 h-40 mx-auto">
-            <img 
-              src="/headshot.png" 
-              alt="Rayyan Khan" 
-              className="w-full h-full rounded-full object-cover"
-            />
-          </div>
-          
           <div>
             <h1 className="text-2xl font-bold mb-2">
-              Rayyan A. Khan <span className="text-2xl">👋</span>
+              Rayyan Ahmed Khan
             </h1>
-            <p className="text-sm text-gray-700 leading-relaxed text-center">
+            <p className="text-sm text-gray-700 leading-relaxed text-left">
               Software Engineer Intern @ Quantolio | Honours Mathematics & Computer Science @ McGill University
             </p>
           </div>
@@ -66,30 +57,21 @@ const Home: React.FC = () => (
       <main className="flex-1">
         <div className="space-y-8">
           <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 leading-relaxed">
-              I'm a computer science student passionate about building scalable web applications 
-              and exploring machine learning. Currently working on various full-stack projects and 
-              contributing to open-source software.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              My work spans across web development, machine learning, and startup ventures. 
-              I enjoy solving complex problems and creating tools that make developers' lives easier.
-            </p>
+            <div className="w-full max-w-2xl mb-8 overflow-hidden h-48">
+              <img 
+                src="/mathpic.png" 
+                alt="Mathematics" 
+                className="w-full h-full object-cover object-[73%_27%]"
+              />
+            </div>
+            <h2 className="mb-4">👋🏽 Hi, I'm Rayyan Khan!</h2>
           </div>
 
-          <div className="flex gap-4 pt-4">
-            <Link 
-              to="/projects" 
-              className="inline-block px-4 py-2 bg-black text-white text-sm font-medium rounded no-underline hover:bg-gray-800 transition"
-            >
-              View Projects
-            </Link>
-            <Link 
-              to="/contact" 
-              className="inline-block px-4 py-2 border border-black text-black text-sm font-medium rounded no-underline hover:bg-gray-50 transition"
-            >
-              Get in Touch
-            </Link>
+          <div className="flex border-l-4 border-gray-400 pl-6 py-2 my-8">
+            <blockquote className="italic text-gray-700 leading-relaxed">
+              <strong>Mathematics</strong> is the queen of the sciences, and <strong>Number Theory</strong> is the queen of mathematics.
+              <cite className="block text-sm text-gray-500 not-italic mt-2">— Carl Friedrich Gauss</cite>
+            </blockquote>
           </div>
         </div>
       </main>

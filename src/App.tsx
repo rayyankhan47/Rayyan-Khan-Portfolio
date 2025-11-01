@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <nav className="border-b border-gray-200 bg-white">
       <div className="max-w-4xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-lg font-semibold no-underline hover:no-underline">
+          <Link to="/" className="text-lg font-semibold no-underline hover:no-underline -ml-2">
             Rayyan's Personal Website
           </Link>
           <div className="flex gap-8">
