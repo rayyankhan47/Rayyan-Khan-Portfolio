@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
@@ -12,14 +11,11 @@ const Navbar: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-lg font-semibold no-underline hover:no-underline">
-            Rayyan A. Khan
+            Rayyan's Personal Website
           </Link>
           <div className="flex gap-8">
             <Link to="/" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
               Home
-            </Link>
-            <Link to="/about" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
-              About
             </Link>
             <Link to="/projects" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
               Projects
@@ -45,7 +41,6 @@ const App: React.FC = () => {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
