@@ -21,7 +21,7 @@ const Home: React.FC = () => (
               Rayyan Ahmed Khan
             </h1>
             <p className="text-sm text-gray-700 leading-relaxed text-left">
-              SWE Intern @ Quantolio | Honours Mathematics & Computer Science @ McGill University | Montreal, Canada
+              SWE Intern @ Thermolio | Honours Mathematics & Computer Science @ McGill University | Montreal, Canada
             </p>
           </div>
 
@@ -146,7 +146,7 @@ const Home: React.FC = () => (
                   I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>, with an expected graduation date of May 2028. 
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                I am also currently working as a Software Engineer Intern at <a target="_blank" rel="noopener noreferrer" href="https://www.quantolio.com/">Quantolio</a>, where I am working with a Next.js, TypeScript, FastAPI, AWS, and Docker tech stack.
+                I am also currently working as a Software Engineer Intern at <a target="_blank" rel="noopener noreferrer" href="https://www.thermolio.com/">Thermolio</a>, where I am working on HVAC smart AI applications with a Next.js, TypeScript, FastAPI, Docker, and AWS tech stack.
                 </p>
 
                 <div className="flex items-center gap-3 mb-2">

@@ -3,10 +3,10 @@ import React from 'react';
 const experiences = [
   {
     role: 'Software Developer Intern',
-    company: 'Quantolio',
+    company: 'Thermolio',
     dates: 'September 2025 - Present',
-    description: 'Working on fintech applications with a focus on backend development and database optimization.',
-    tech: ['Python', 'PostgreSQL', 'Docker', 'AWS'],
+    description: 'Working on HVAC smart AI applications.',
+    tech: ['TypeScript', 'Next.js', 'FastAPI', 'PostgreSQL', 'Docker', 'AWS'],
   },
   {
     role: 'Freelance Web Developer',
@@ -17,17 +17,10 @@ const experiences = [
     link: 'https://yulrentals-git-main-rayyan-khans-projects-68783307.vercel.app/',
   },
   {
-    role: 'Founder & Lead Engineer',
-    company: 'ParlonsCégep',
-    dates: 'March 2025 - Present',
-    description: 'Leading the development of Québec\'s first dedicated social platform for CEGEP students, overseeing a cross-functional team of software engineering and marketing.',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
-  },
-  {
     role: 'MAIS 202 - Machine Learning Workshop',
     company: 'McGill University',
     dates: 'February 2025 - April 2025',
-    description: 'Participated in an 8-week intensive ML/AI workshop, learning about core Machine Learning principles, Neural Networks, and CNNs for a cumulative project.',
+    description: 'Participated in an 8-week intensive ML/AI workshop, learning about core Machine Learning principles, Neural Networks, and Convolutional Neural Networks.',
     tech: ['Python', 'scikit-learn', 'TensorFlow'],
   },
 ];
