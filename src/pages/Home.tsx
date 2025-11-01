@@ -124,9 +124,8 @@ const Home: React.FC = () => (
 
                 <h3 className="font-bold text-lg mb-2">🎤 Education Advocacy Initiatives</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Ever since 2020, I have been extremely passionate about advocating for the importance of education, and have had the wonderful opportunity to be involved in various initiatives to help spread this message.
-                  Some of these initiatives include:
-                  <ul className="list-disc list-inside text-gray-700 leading-relaxed">
+                  Ever since 2020, I have been extremely passionate about advocating for the importance of education, and have had the wonderful opportunity to be involved in various initiatives to help spread this message:
+                  <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-4 mt-3">
                     <li>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=3QA8cwoKIoY"><b>The Mindful Students Podcast (2023)</b></a>: A podcast interview with Qasim Mughal, a second year medical student at McGill University, where we discussed his academic path towards medicine.
                     </li>
@@ -138,6 +137,11 @@ const Home: React.FC = () => (
                       <b>High School To College Workshop (2023)</b>: A friend and I organized workshops for high school students at our alma mater to help them prepare for the Québec collegiate (CÉGEP) experience.
                     </li>
                   </ul>
+                </p>
+
+                <h3 className="font-bold text-lg mb-2">👥 Leadership, Service, and Engagement</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  
                 </p>
               </div>
             </div>
