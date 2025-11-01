@@ -185,6 +185,9 @@ const Home: React.FC = () => (
                     <li>
                       <b>Reading Math & CS books/papers</b>: I enjoy reading books and papers about mathematics and computer science, and I'm currently reading <i><b><a target="_blank" rel="noopener noreferrer" href="http://abstract.ups.edu/">Abstract Algebra: Theory and Applications</a></b> by Thomas W. Judson</i>, and <i><b><a target="_blank" rel="noopener noreferrer" href="https://www.akkadia.org/drepper/cpumemory.pdf">What Every Programmer Should Know About Memory</a></b> by Ulrich Drepper</i>.
                     </li>
+                    <li>
+                      <b>Practicing E-Sports</b>: I've recently developed a passion for certain fighting games and I practice them often in my free time with friends. I've participated in a few competitions over the summer of 2025, and I'm looking forward to participating in more local ones this year.
+                    </li>
                   </ul>
                 </p>
 
