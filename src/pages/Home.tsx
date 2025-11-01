@@ -19,7 +19,7 @@ const Home: React.FC = () => (
               Rayyan Ahmed Khan
             </h1>
             <p className="text-sm text-gray-700 leading-relaxed text-left">
-              Software Engineer Intern @ Quantolio | Honours Mathematics & Computer Science @ McGill University
+              SWE Intern @ Quantolio | Honours Mathematics & Computer Science @ McGill University | Montreal, Canada
             </p>
           </div>
 
@@ -119,7 +119,10 @@ const Home: React.FC = () => (
                   and have especially been exploring the worlds of <b>machine learning</b> and <b>software engineering</b>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>, with an expected graduation date of May 2028.
+                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>, with an expected graduation date of May 2028. 
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                I am also currently working as a Software Engineer Intern at <a target="_blank" rel="noopener noreferrer" href="https://www.quantolio.com/">Quantolio</a>, where I am working with a Next.js, TypeScript, FastAPI, AWS, and Docker tech stack.
                 </p>
 
                 <h3 className="font-bold text-lg mb-2">🎤 Education Advocacy Initiatives</h3>
@@ -130,28 +133,57 @@ const Home: React.FC = () => (
                         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=3QA8cwoKIoY"><b>The Mindful Students Podcast (2023)</b></a>: A podcast interview with Qasim Mughal, a second year medical student at McGill University, where we discussed his academic path towards medicine.
                     </li>
                     <li>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/muslimyouthspace_uarr/"><b>UARR Muslim Youth Space (2021)</b></a>: I was fortunate enough to be selected as a workshop speaker, alongside peers, and present a topic of our choice.
-                      Our topic was "The Importance of Education Through the Islamic Perspective", where I had the opportunity to share my personal journey from being an underperforming and uninterested student to a successful and passionate one through my faith.
+                      <b>High School To College Workshop (2023)</b>: A friend and I organized workshops for high school students at our alma mater to help them prepare for the Québec collegiate (CÉGEP) experience.
                     </li>
                     <li>
-                      <b>High School To College Workshop (2023)</b>: A friend and I organized workshops for high school students at our alma mater to help them prepare for the Québec collegiate (CÉGEP) experience.
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/muslimyouthspace_uarr/"><b>UARR Muslim Youth Space (2021)</b></a>: I was fortunate enough to be selected as a workshop speaker, alongside peers, and present a topic of our choice.
+                      Our topic was "The Importance of Education Through the Islamic Perspective", where I had the opportunity to share my personal journey from being an underperforming and uninterested student to a successful and passionate one through my faith.
                     </li>
                   </ul>
                 </p>
 
-                <h3 className="font-bold text-lg mb-2">👥 Leadership, Service, and Engagement</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  
-                </p>
-              </div>
-            </div>
-
-            {/* Affiliation Section */}
-            <div>
-              <h2 className="font-bold text-xl mb-2">Affiliation</h2>
-              <div className="border-b border-gray-300 mb-4"></div>
-              <div className="flex gap-6 flex-wrap">
-                {/* Add your 4 logos here */}
+                <h3 className="font-bold text-lg mb-4">👥 Leadership, Service, and Engagement ✨</h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse border border-gray-300">
+                    <thead>
+                      <tr className="bg-gray-100">
+                        <th className="border border-gray-300 px-4 py-2 text-left font-bold text-gray-700">Role</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-bold text-gray-700">Affiliation</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-bold text-gray-700">Dates of Service</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          Director of Prayer
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Muslim Student Assocation of McGill University</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Sept 2025 – Present</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          Volunteer Tutor (Math, Physics, Chemistry)
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Dawson College</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Dec 2023 – May 2024</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          Vice-President (Formerly Secretary, Social Media Manager)
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Muslim Student Association of Dawson College</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Sep 2022 – Jan 2024</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          President
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Best Buddies Canada, Dawson College Branch</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Aug 2023 – May 2024</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
