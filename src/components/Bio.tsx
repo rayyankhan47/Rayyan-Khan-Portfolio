@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Youtube } from "lucide-react";
+import { Mail, Github, Linkedin, Youtube, Rocket } from "lucide-react";
 import thebrosImage from "@/assets/thebros.png";
 
 const Bio = () => {
@@ -66,6 +66,15 @@ const Bio = () => {
         >
           <Youtube className="w-4 h-4" />
           <span>YouTube</span>
+        </a>
+        <a
+          href="https://devpost.com/AhmedSalafi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Rocket className="w-4 h-4" />
+          <span>Devpost</span>
         </a>
       </div>
     </section>
