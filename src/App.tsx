@@ -1,54 +1,30 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Work from "./pages/Work";
-import Contact from "./pages/Contact";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
-const Navbar: React.FC = () => {
-  return (
-    <nav className="border-b border-gray-200 bg-white">
-      <div className="max-w-4xl mx-auto px-6 py-6">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="text-lg font-semibold no-underline hover:no-underline -ml-2">
-            Rayyan's Personal Website
-          </Link>
-          <div className="flex gap-8">
-            <Link to="/" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
-              Home
-            </Link>
-            <Link to="/projects" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
-              Projects
-            </Link>
-            <Link to="/work" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
-              Work
-            </Link>
-            <Link to="/contact" className="text-sm no-underline hover:no-underline text-gray-600 hover:text-black transition">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
+const queryClient = new QueryClient();
 
-const App: React.FC = () => {
-  return (
-    <Router>
-      <div className="bg-white min-h-screen text-black w-full h-full flex flex-col">
-        <Navbar />
-        <div className="flex-1">
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider defaultTheme="system" storageKey="rayyan-portfolio-theme">
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Index />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
-        </div>
-      </div>
-    </Router>
-  );
-};
+        </BrowserRouter>
+      </TooltipProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
+);
 
 export default App;

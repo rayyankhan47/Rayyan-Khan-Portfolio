@@ -21,7 +21,7 @@ const Home: React.FC = () => (
               Rayyan Ahmed Khan
             </h1>
             <p className="text-sm text-gray-700 leading-relaxed text-left">
-              SWE Intern @ Quantolio | Honours Mathematics & Computer Science @ McGill University | Montreal, Canada
+              Honours Mathematics & Computer Science @ McGill University | Montreal, Canada
             </p>
           </div>
 
@@ -103,12 +103,12 @@ const Home: React.FC = () => (
 
           <div className="mb-6 flex flex-col items-start">
             <img 
-              src="/csbros.png" 
+              src="/thebros.png" 
               alt="CS buddies in Toronto" 
               className="max-w-2xl w-full rounded-lg shadow-md"
             />
             <p className="text-sm text-gray-600 mt-3 italic">
-              Me (blue shirt) and some CS buddies in my favourite city, Toronto, post-hackathon
+              Me (2nd from the left) and some friends winning a hackathon
             </p>
           </div>
 
@@ -131,7 +131,7 @@ const Home: React.FC = () => (
                 </div>
                 <p className="text-gray-700 leading-relaxed">
                   I hold a Diploma of College Studies in Health Sciences from <a href="https://www.dawsoncollege.qc.ca/">Dawson College</a>.
-                  Here, I built a strong foundation in <b>problem-solving</b> and <b>critical thinking</b>, while especially developing a passion for <b>community service</b>, <b>leadership</b>, and <b>education advocacy</b>.
+                  Here, I developed a strong passion for <b>community service</b>, <b>leadership</b>, and <b>education advocacy</b>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Although I was initially interested in pursuing a career in medicine, I found a deep and sincere passion for <b>mathematics</b>,
@@ -141,12 +141,6 @@ const Home: React.FC = () => (
                 <p className="text-gray-700 leading-relaxed">
                   Although I have a strong passion for the above, I have also ended up finding a strong interest in <b>computer science</b>,
                   and have especially been exploring the worlds of <b>machine learning</b> and <b>software engineering</b>.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  I am currently pursuing a Bachelor of Science (B.Sc.) in Honours Computer Science and Mathematics at <a target="_blank" rel="noopener noreferrer" href="https://www.mcgill.ca/">McGill University</a>, with an expected graduation date of May 2028. 
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                I am also currently working as a Software Engineer Intern at <a target="_blank" rel="noopener noreferrer" href="https://www.thermolio.com/">Quantolio</a>, where I am working on HVAC smart AI applications with a Next.js, TypeScript, FastAPI, Docker, and AWS tech stack.
                 </p>
 
                 <div className="flex items-center gap-3 mb-2">
@@ -180,7 +174,7 @@ const Home: React.FC = () => (
                       <b>Learning about LLMs</b>: My particular interests in AI either lie in applications of AI & robotics, or otherwise (and more significantly) in Large Language Models. I'm currently trying to rebuild GPT-2's 124M model from scratch for pedagogical purposes, inspired by Andrej Karpathy's playlist titled <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=H61Jul5CuI6pO7eh">"Neural Networks: Zero to Hero"</a>.
                     </li>
                     <li>
-                      <b>Content Creation</b>: I have been creating content on several YouTube channels ever since 2015, and as of <b>October 2025</b>, I have been recording my progress while I try to become a successful and skilled programmer, <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/playlist?list=PLHgYCxmJQu-cUsrloeCrLjIdlR2_yksf1&si=p_cBXQ8BkybhWLZ3">which you can watch here</a>. 
+                      <b>Content Creation</b>: I have been creating content on several YouTube channels ever since 2015, and as of <b>October 2025</b>, I have been recording my progress while I try to become a successful and skilled programmer, <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCG89z3ZEYkn0E3WmEkSS_Xw">which you can watch here</a>. 
                     </li>
                     <li>
                       <b>Reading Math & CS books/papers</b>: I enjoy reading books and papers about mathematics and computer science, and I'm currently reading <i><b><a target="_blank" rel="noopener noreferrer" href="http://abstract.ups.edu/">Abstract Algebra: Theory and Applications</a></b> by Thomas W. Judson</i>, and <i><b><a target="_blank" rel="noopener noreferrer" href="https://www.akkadia.org/drepper/cpumemory.pdf">What Every Programmer Should Know About Memory</a></b> by Ulrich Drepper</i>.
@@ -205,6 +199,13 @@ const Home: React.FC = () => (
                       </tr>
                     </thead>
                     <tbody>
+                    <tr>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">
+                          Campus Associate
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Anthropic, Claude Builder Club @ McGill</td>
+                        <td className="border border-gray-300 px-4 py-2 text-gray-700">Jan 2026 – Present</td>
+                      </tr>
                       <tr>
                         <td className="border border-gray-300 px-4 py-2 text-gray-700">
                           Director of Prayer
